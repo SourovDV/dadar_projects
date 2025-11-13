@@ -9,5 +9,7 @@ class ImagePath {
   static final String onboadingThreeImage = "$_baseUrlPath/onboading_three_pages.png";
   static final String forgotScree = "$_baseUrlPath/image.png";
   static final String otpScreen = "$_baseUrlPath/otp_screen.png";
-
+  static final String resetPassword = "$_baseUrlPath/reset_password.png";
+  static final String locationImage = "$_baseUrlPath/location_image.png";
+  static final String sucessImage="$_baseUrlPath/sucess.png";
 }

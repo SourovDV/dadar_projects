@@ -8,5 +8,8 @@ class ForgotController extends GetxController{
   void otpToResetPassword(){
     Get.toNamed(AppPages.resetPassword);
   }
+  void resetToSignUpPage(){
+    Get.toNamed(AppPages.signUp);
+  }
 
 }

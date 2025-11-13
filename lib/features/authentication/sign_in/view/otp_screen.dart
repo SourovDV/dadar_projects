@@ -19,27 +19,30 @@ class OtpScreen extends GetView<ForgotController> {
         backgroundColor: AppColor.surfacePrimary,
         iconTheme: IconThemeData(color: Colors.grey),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset(ImagePath.otpScreen),
-          Text("We've Sent a Code to exa...@email.com",style: theme.labelSmall?.copyWith(color: Colors.white),),
-          SizedBox(height: 30,),
-          buildPinCodeTextField(context),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(height: 20.h,),
-              Text("If you didn’t receive a codsd.",style: theme.labelSmall?.copyWith(color: Colors.white),),
-
-              Text("Resend",style: theme.labelLarge?.copyWith(fontSize: 22),)
-            ],
-          ),
-          SizedBox(height: 400.h,),
-          PrimaryButton(theme: theme, title: "Verify", ontap:(){
-            controller.otpToResetPassword();
-          })
-        ],
+      body: SingleChildScrollView(
+        padding: EdgeInsets.symmetric(horizontal: 16),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(ImagePath.otpScreen),
+            Text("We've Sent a Code to exa...@email.com",style: theme.labelSmall?.copyWith(color: Colors.white),),
+            SizedBox(height: 30,),
+            buildPinCodeTextField(context),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SizedBox(height: 20.h,),
+                Text("If you didn’t receive a codsd.",style: theme.labelSmall?.copyWith(color: Colors.white),),
+        
+                Text("Resend",style: theme.labelLarge?.copyWith(fontSize: 22),)
+              ],
+            ),
+            SizedBox(height: 400.h,),
+            PrimaryButton(theme: theme, title: "Verify", ontap:(){
+              controller.otpToResetPassword();
+            })
+          ],
+        ),
       ),
     );
   }
