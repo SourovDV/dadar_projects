@@ -5,4 +5,6 @@ class AppPages {
   static final String onBoadingThreePage = '/onboading_three';
   static final String signInPage = '/sign_in_page';
   static final String forgotPassword = '/forgot_password';
+  static final String optScreen = '/opt_screen';
+  static final String resetPassword='/reset_password';
 }

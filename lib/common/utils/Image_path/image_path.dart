@@ -7,5 +7,7 @@ class ImagePath {
   static final String toggolThree = "$_baseUrlPath/toggol_three.png";
   static final String onboadingTwoImage = "$_baseUrlPath/onboadingTwoImage.png";
   static final String onboadingThreeImage = "$_baseUrlPath/onboading_three_pages.png";
+  static final String forgotScree = "$_baseUrlPath/image.png";
+  static final String otpScreen = "$_baseUrlPath/otp_screen.png";
 
 }

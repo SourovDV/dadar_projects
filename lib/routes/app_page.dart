@@ -1,5 +1,7 @@
 import 'package:dadar_projects/features/authentication/sign_in/bindings/authentication_bindings.dart';
 import 'package:dadar_projects/features/authentication/sign_in/view/forgot_password.dart';
+import 'package:dadar_projects/features/authentication/sign_in/view/otp_screen.dart';
+import 'package:dadar_projects/features/authentication/sign_in/view/reset_password.dart';
 import 'package:dadar_projects/features/authentication/sign_in/view/sign_in_view.dart';
 import 'package:dadar_projects/features/onboading/binding/onboading_bindings.dart';
 import 'package:dadar_projects/features/onboading/view/onboading_one_screen.dart';
@@ -20,6 +22,8 @@ class AppRoutes {
     GetPage(name: AppPages.onBoadingThreePage, page: ()=>OnboadingThreeScreen(),binding: OnBoadingBinding()),
     GetPage(name: AppPages.signInPage, page: ()=>SignInView(),binding: AuthenticationBindings()),
     GetPage(name: AppPages.forgotPassword, page: ()=>ForgotPassword(),binding: AuthenticationBindings()),
+    GetPage(name: AppPages.optScreen, page: ()=>OtpScreen(),binding: AuthenticationBindings()),
+    GetPage(name: AppPages.resetPassword, page: ()=>ResetPassword(),binding: AuthenticationBindings()),
 
   ];
 

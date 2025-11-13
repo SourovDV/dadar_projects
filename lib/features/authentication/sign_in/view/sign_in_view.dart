@@ -33,7 +33,7 @@ class SignInView extends GetView<SignInController> {
                     padding: const EdgeInsets.symmetric(vertical: 20),
                     child: CommonTextFormFiled(hintext: "password", icon: Icon(Icons.remove_red_eye_outlined),),
                   ),
-                  PrimaryButton(theme: theme, title:"Sign In",),
+                  PrimaryButton(theme: theme, title:"Sign In", ontap: () {  },),
                   SizedBox(height: 10.h),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
